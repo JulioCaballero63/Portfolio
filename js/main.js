@@ -15,6 +15,6 @@ const links = [
           href.innerText = link.label;
 
           li.appendChild(href);
-          ol.appendChild(link);
+          ol.appendChild(li);
       })
   }
