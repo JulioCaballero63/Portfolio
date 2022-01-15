@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week One Team Activity</title>
     <meta name="description" content="This is team's 6 week one activity.">
+    <link rel="stylesheet" href="../css/small.css">
     <script>
         const sumTo = () => {
             let input = parseInt(document.getElementById('firstNumber').value);
@@ -61,26 +62,38 @@
 </head>
 
 <body>
-    <h1>Week One Team Activity</h1>
 
-    <label for="ta01">Enter a integer</label>
-    <input type="text" id="firstNumber" name="ta01">
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a class="" href="../index.html">Home</a></li>
+                <li class="main-header__item"><a class="active" href="#">Week One</a></li>
+                <li class="main-header__item"><a class="" href="../week2/index.html">Week Two</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Week One Team Activity</h1>
 
-    <button type="button" onclick="sumTo()">Add All</button><br>
-    <div id="result"></div><br>
+        <label for="ta01">Enter a integer</label>
+        <input type="text" id="firstNumber" name="ta01">
 
-    <label for="ta01">Enter a second integer</label>
-    <input type="text" id="secondNumber" name="ta"><br>
+        <button type="button" onclick="sumTo()">Add All</button><br>
+        <div id="result"></div><br>
 
-    <button type="button" onclick="operation(add)">Sum</button>
+        <label for="ta01">Enter a second integer</label>
+        <input type="text" id="secondNumber" name="ta"><br>
 
-    <button type="button" onclick="operation(sub)">-</button>
+        <button type="button" onclick="operation(add)">Sum</button>
 
-    <button type="button" onclick="operation(mult)">*</button>
+        <button type="button" onclick="operation(sub)">-</button>
 
-    <button type="button" onclick="operation(div)">/</button>
+        <button type="button" onclick="operation(mult)">*</button>
 
-    <div id="total"></div>
+        <button type="button" onclick="operation(div)">/</button>
+
+        <div id="total"></div>
+    </main>
 </body>
 
 </html>
