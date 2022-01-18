@@ -90,6 +90,15 @@ main {
     margin: 0 auto;
 }
 
+.article-pic {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+.article-pic .article-img {
+    width: 100%;
+}
+
 /* Cards */
 .cards {
     display: flex;
