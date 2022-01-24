@@ -413,3 +413,37 @@ button:hover {
     cursor: pointer;
     transform: translateY(-2px);
 }
+
+.box {
+    border: 3px solid rgb(99, 3, 189);
+}
+
+.box:nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+
+.box:nth-child(2) {
+    border-top: none;
+}
+
+.box:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+.box:nth-child(4),
+.box:nth-child(7) {
+    border-left: none;
+}
+
+.box:nth-child(6),
+.box:nth-child(9) {
+    border-right: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+    border-bottom: none;
+}

@@ -1,3 +1,4 @@
+// create variables
 const gameboard = document.getElementById("gameboard");
 const boxes = Array.from(document.getElementsByClassName("box"));
 const restartBtn = document.getElementById("restartBtn");
@@ -7,36 +8,24 @@ const player1 = "O";
 const player2 = "X";
 let currentPlayer = player1;
 
-const drawBoard = () => {
-    boxes.forEach((box, index) => {
-        let styleString = "";
-        if (index < 3) {
-            styleString += `border-bottom: 3px solid rgb(99, 3, 189);`;
-        }
-        if (index % 3 === 0) {
-            styleString += `border-right: 3px solid rgb(99, 3, 189);`;
-        }
-        if (index % 3 === 2) {
-            styleString += `border-left: 3px solid rgb(99, 3, 189);`;
-        }
-        if (index > 5) {
-            styleString += `border-top: 3px solid rgb(99, 3, 189);`;
-        }
-        box.style = styleString;
+// add event listener
+gameboard.addEventListener("click", boxClicked);
 
-        box.addEventListener("click", boxClicked);
-    });
-};
-
+// display the player that clicked on the box
 function boxClicked(e) {
-    const id = e.target.id;
-    if (!spaces[id]) {
-        spaces[id] = currentPlayer;
+
+    // get the index of the box that was clicked
+    const index = e.target.id;
+    if (!spaces[index]) {
+        spaces[index] = currentPlayer;
         e.target.innerText = currentPlayer;
+
+        // check for winner
         if (hasPlayerWon(currentPlayer)) {
             playText.innerHTML = `${currentPlayer} wins!!`;
             return;
         }
+        // switch player
         currentPlayer = currentPlayer === player1 ? player2 : player1;
     }
 }
@@ -86,6 +75,7 @@ const hasPlayerWon = (player) => {
 
 };
 
+// reset game 
 restartBtn.addEventListener("click", () => {
     spaces.forEach((space, index) => {
         spaces[index] = null;
@@ -93,9 +83,8 @@ restartBtn.addEventListener("click", () => {
     boxes.forEach((box) => {
         box.innerText = "";
     });
-    playText.innerHTML = `Let's Play!!`;
+    playText.innerHTML = `Tic Tac Toe`;
 
     currentPlayer = player1;
 });
 
-drawBoard();
