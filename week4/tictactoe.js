@@ -3,9 +3,9 @@ const boxes = Array.from(document.getElementsByClassName("box"));
 const restartBtn = document.getElementById("restartBtn");
 const playText = document.getElementById("playText");
 const spaces = [null, null, null, null, null, null, null, null, null];
-const O_TEXT = "O";
-const X_TEXT = "X";
-let currentPlayer = O_TEXT;
+const player1 = "O";
+const player2 = "X";
+let currentPlayer = player1;
 
 const drawBoard = () => {
     boxes.forEach((box, index) => {
@@ -37,7 +37,7 @@ function boxClicked(e) {
             playText.innerHTML = `${currentPlayer} wins!!`;
             return;
         }
-        currentPlayer = currentPlayer === O_TEXT ? X_TEXT : O_TEXT;
+        currentPlayer = currentPlayer === player1 ? player2 : player1;
     }
 }
 
@@ -95,7 +95,7 @@ restartBtn.addEventListener("click", () => {
     });
     playText.innerHTML = `Let's Play!!`;
 
-    currentPlayer = O_TEXT;
+    currentPlayer = player1;
 });
 
 drawBoard();
