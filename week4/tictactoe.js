@@ -10,12 +10,12 @@ let currentPlayer = player1;
 
 // add event listener
 gameboard.addEventListener("click", boxClicked);
-
+let turnCount = 0;
 // display the player that clicked on the box
 function boxClicked(e) {
-
     // get the index of the box that was clicked
     const index = e.target.id;
+    turnCount++;
     if (!spaces[index]) {
         spaces[index] = currentPlayer;
         e.target.innerText = currentPlayer;
@@ -25,9 +25,15 @@ function boxClicked(e) {
             playText.innerHTML = `${currentPlayer} wins!!`;
             return;
         }
+
+        if (turnCount == 8) {
+            playText.innerHTML = `Tie`;
+            return;
+        }
         // switch player
         currentPlayer = currentPlayer === player1 ? player2 : player1;
     }
+
 }
 
 const hasPlayerWon = (player) => {
@@ -47,7 +53,7 @@ const hasPlayerWon = (player) => {
         }
     }
     //from bottom check up and across
-    if (spaces[8] === player) {
+    else if (spaces[8] === player) {
         if (spaces[2] === player && spaces[5] === player) {
             console.log(`${player} wins on the right`);
             return true;
@@ -58,7 +64,7 @@ const hasPlayerWon = (player) => {
         }
     }
     //from middle check middle vertical and middle horizontal
-    if (spaces[4] === player) {
+    else if (spaces[4] === player) {
         if (spaces[3] === player && spaces[5] === player) {
             console.log(`${player} wins on the middle horizontal`);
             return true;
@@ -72,7 +78,9 @@ const hasPlayerWon = (player) => {
             return true;
         }
     }
-
+    else {
+        return false;
+    }
 };
 
 // reset game 
