@@ -233,20 +233,18 @@ main {
     flex: 1 1 50%;
 }
 
-.connected a {
-    margin-bottom: 0;
-    padding-bottom: 2em;
-}
-
 .connected .fa {
-    padding: 0.8em;
+    padding: .5em;
     font-size: 1.5em;
-    width: 1em;
+    width: 2em;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border-radius: 30px;
+    border-radius: 100px;
+
 }
+
+
 
 .fa:hover {
     opacity: 0.7;
