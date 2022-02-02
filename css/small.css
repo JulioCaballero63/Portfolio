@@ -394,7 +394,6 @@ h4 {
 }
 
 button {
-    padding: 10px 20px;
     border-radius: 10px;
     background: radial-gradient(rgba(132, 233, 119, 0.973),
             rgba(3, 241, 35, 0.973));
