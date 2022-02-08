@@ -1,0 +1,22 @@
+{
+  "name": "wdd330",
+  "version": "1.0.0",
+  "description": "wdd330 projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioCaballero63/wdd330.git"
+  },
+  "author": "julio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulioCaballero63/wdd330/issues"
+  },
+  "homepage": "https://github.com/JulioCaballero63/wdd330#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
