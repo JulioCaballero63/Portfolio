@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 
@@ -57,39 +59,38 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script>
-  window.addEventListener('keydown', playSound)
-  let value = 0;
+  <script>
+    window.addEventListener('keydown', playSound)
+    let value = 0;
 
-  function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    function playSound(e) {
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
 
-    key.classList.add('playing');
-    audio.currentTime = 0;
-    audio.play();
+      key.classList.add('playing');
+      audio.currentTime = 0;
+      audio.play();
 
-    moveDown(key, e);
+      moveDown(key, e);
 
-    const timeout = setTimeout( () => {
-      key.classList.remove('playing');
-    }, 80);
+      const timeout = setTimeout(() => {
+        key.classList.remove('playing');
+      }, 80);
 
-    return key;
-  }
-
-  function moveDown(key, e) {
-    if (value == 90) {
-      key.style.top = "0px";
+      return key;
     }
 
-    else {
-      value += 10;
-      key.style.top = value + "px";
+    function moveDown(key, e) {
+      if (value == 90) {
+        key.style.top = "0px";
+      } else {
+        value += 10;
+        key.style.top = value + "px";
+      }
     }
-  }
-</script>
+  </script>
 
 
 </body>
+
 </html>
