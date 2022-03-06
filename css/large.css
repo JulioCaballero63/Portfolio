@@ -11,12 +11,12 @@
 
     nav {
         margin: 0;
-        flex: 1 0 50%;
+        flex: 1 0 65%;
         padding-top: 1em;
     }
 
     header {
-        flex: 1 0 40%;
+        flex: 1 0 35%;
     }
 
     .nav-items li:first-child {
