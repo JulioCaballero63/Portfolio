@@ -444,3 +444,12 @@ button:hover {
 .box:nth-child(9) {
     border-bottom: none;
 }
+
+#content,
+#quakes {
+    background-color: coral;
+}
+
+#test {
+    background-color: coral;
+}
