@@ -80,6 +80,88 @@ nav {
     display: block;
 }
 
+/* weather */
+.weather {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    margin: 1em auto;
+
+}
+
+.summary {
+    background: radial-gradient(rgba(238, 238, 238, 0.973),
+            rgba(28, 184, 36, 0.973));
+    border: 1px solid rgba(0, 0, 0, 0.966);
+    padding: 1rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+}
+
+.townweather {
+    display: flex;
+    flex-direction: column;
+}
+
+.townweather p {
+    margin: 0;
+    padding: 0.1em;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(9, 3, 95, 0.945);
+}
+
+.townweather p:first-child {
+    font-size: 2.5em;
+}
+
+.forecastdays {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+.days {
+    border: 2px solid rgba(9, 3, 95, 0.945);
+    border-radius: 6px;
+}
+
+#currently {
+    text-transform: capitalize;
+}
+
+.fore-img {
+    width: 100%;
+    border: 0;
+}
+
+.data {
+    display: block;
+    margin: 0;
+    padding: 0 5px 5px;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(9, 3, 95, 0.945);
+}
+
+.weather h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgba(9, 3, 95, 0.945);
+}
+
+.city {
+    font-size: 1.5em;
+}
+
+#city {
+    padding: .5em;
+}
+
 body {
     background-color: rgba(233, 245, 219, 1);
 }

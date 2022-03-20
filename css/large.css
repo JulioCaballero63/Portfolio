@@ -49,16 +49,6 @@
         border-radius: 6px;
     }
 
-    .weather {
-        position: absolute;
-        top: 13em;
-        right: 7em;
-    }
-
-    .hero-img {
-        padding-top: 1em;
-    }
-
     .article-pic {
         width: 30%;
         margin: 1rem 1rem 1rem 4rem;
