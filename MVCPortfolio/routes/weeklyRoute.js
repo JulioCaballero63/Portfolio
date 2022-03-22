@@ -2,31 +2,19 @@ const path = require('path');
 
 const express = require('express');
 
-const rootDir = require('../util/path');
+const weeklyController = require('../controllers/weeklyController');
 
 const router = express.Router();
-// const weeklyController = require('../controllers/weeklyController');
 
-router.get('/index', (req, res, next) => {
-    res.render('index', { pageTitle: 'WDD 330 Portfolio' })
-});
 
-router.get('/week1', (req, res, next) => {
-    res.render('weeklyActivities/week1', {
-        pageTitle: 'Week One',
-        path: '/week1'
-    })
-});
+router.get('/index', weeklyController.getIndex);
 
-router.get('/week2', (req, res, next) => {
-    res.render('weeklyActivities/week2', {
-        pageTitle: 'Week Two',
-        path: '/week2'
-    })
-});
+router.get('/week1', weeklyController.getWeekOne);
 
-router.get('/', (req, res, next) => {
-    res.render('index', { pageTitle: 'WDD 330 Portfolio' })
-});
+router.get('/week2', weeklyController.getWeekTwo);
+
+router.get('/onePageApp', weeklyController.getOnePageApp);
+
+router.get('/', weeklyController.getAll);
 
 module.exports = router;

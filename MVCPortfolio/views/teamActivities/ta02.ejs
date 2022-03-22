@@ -1,0 +1,79 @@
+<%- include('../includes/head.ejs') %>
+<script>
+    const sumTo = () => {
+        let input = parseInt(document.getElementById('firstNumber').value);
+        let result = sum(input);
+        document.getElementById('result').innerHTML = 'Total: ' + result;
+    };
+
+
+    const sum = (n) => {
+        let value = 0;
+        for (i = 0; i <= n; i++) {
+            value += i;
+        }
+        return value;
+    }
+
+    // stretch solution
+    function userInput(input) {
+        const number = parseInt(document.getElementById(input).value);
+        if (number !== NaN) {
+            return number;
+        } else return 0;
+    }
+    // display result
+    function updateTotal(value) {
+        const outputElement = document.getElementById('total');
+        outputElement.innerHTML = 'Total: ' + value;
+    }
+    // add
+    const add = (num1, num2) => num1 + num2;
+
+    // division
+    const div = (num1, num2) => num1 / num2;
+
+    // subtract
+    const sub = (num1, num2) => num1 - num2;
+
+    // multiply
+    const mult = (num1, num2) => num1 * num2;
+
+    // example of using a callback to pull it all together
+
+    const operation = (operation) => {
+
+        const total = operation(
+            userInput('firstNumber'),
+            userInput('secondNumber')
+        );
+        updateTotal(total);
+    }
+</script>
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <h1>Week Two Team Activity</h1>
+
+        <label for="ta01">Enter a integer</label>
+        <input type="text" id="firstNumber" name="ta01">
+
+        <button type="button" onclick="sumTo()">Add All</button><br>
+        <div id="result"></div><br>
+
+        <label for="ta01">Enter a second integer</label>
+        <input type="text" id="secondNumber" name="ta"><br>
+
+        <button type="button" onclick="operation(add)">Sum</button>
+
+        <button type="button" onclick="operation(sub)">-</button>
+
+        <button type="button" onclick="operation(mult)">*</button>
+
+        <button type="button" onclick="operation(div)">/</button>
+
+        <div id="total"></div>
+    </main>
+    <%- include('../includes/end.ejs') %>

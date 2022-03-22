@@ -1,0 +1,55 @@
+<%- include('includes/head.ejs') %>
+<script src="js/weather.js" defer></script>
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <main>
+        <h1>Weather APP</h1>
+        <p>This app shows the current weather and a 3 day forecast for any USA city, you need to enter the latitude and
+            longitude for the city you wish to check.</p>
+        <form action="post">
+            <div>
+                <label for="city" class="city">City Name</label>
+                <input type="text" id="city">
+            </div>
+            <br />
+            <button type="button" onclick='weather()'>Check</button>
+        </form>
+        <div class="weather">
+            <section class="summary">
+                <h2 id="name">Current Weather</h2>
+                <div class="townweather">
+                    <p><span id="temp"></span>°F</p>
+                    <p><span id="currently"></span></p>
+                    <p><span id="humidity"></span>% Humidity</p>
+                </div>
+                <hr />
+                <!-- forecast -->
+                <div class="forecast">
+                    <h2>3 Day Forecast</h2>
+                    <div class="forecastdays">
+                        <div class="days">
+                            <img class="fore-img" id="image1" src="#" alt="#" />
+                            <p class="data"><span id="forecast1"></span>°F</p>
+                            <span id="dayofweek1"></span>
+                        </div>
+
+                        <div class="days">
+                            <img class="fore-img" id="image2" src="#" alt="#" />
+                            <p class="data"><span id="forecast2"></span>°F</p>
+                            <span id="dayofweek2"></span>
+                        </div>
+
+                        <div class="days">
+                            <img class="fore-img" id="image3" src="#" alt="#" />
+                            <p class="data"><span id="forecast3"></span>°F</p>
+                            <span id="dayofweek3"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <%- include('includes/end.ejs') %>
