@@ -1,0 +1,53 @@
+<%- include('includes/head.ejs') %>
+
+<script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="largenav">
+        <header>
+            <div class="logoh1">
+                <picture>
+                    <img src="images/logo.jpg" alt="logo" />
+                </picture>
+                <section class="header">
+                    <h1><%= pageTitle %></h1>
+                </section>
+            </div>
+        </header>
+        <nav>
+            <ul class="nav-items">
+                <li><a class="hamburger button" href="#">🍔 Menu</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <!-- profile picture  -->
+        <figure class="article-pic">
+            <img class="article-img" src="/images/profile.jpg" alt="profile picture" />
+        </figure>
+        <!-- cards -->
+        <div class="cards">
+            <ol id="linksList">
+
+            </ol>
+            <script>
+                loadIndex();
+            </script>
+        </div>
+        <!-- form and events-->
+        <div class="coming-up">
+            <div class="events">
+                <h2>Upcoming Assignments</h2>
+                <ul>
+                    <li>Upcoming Assignments Place Holder.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <%- include('includes/end.ejs') %>
