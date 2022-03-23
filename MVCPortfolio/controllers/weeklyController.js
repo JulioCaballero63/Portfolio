@@ -23,6 +23,62 @@ exports.getWeekThree = (req, res, next) => {
     });
 }
 
+exports.getWeekFour = (req, res, next) => {
+    res.render('weeklyActivities/week4', {
+        pageTitle: 'Week Four',
+        path: '/week4'
+    });
+}
+
+exports.getWeekFive = (req, res, next) => {
+    res.render('weeklyActivities/week5', {
+        pageTitle: 'Week Five',
+        path: '/week5'
+    });
+}
+
+exports.getWeekSix = (req, res, next) => {
+    res.render('weeklyActivities/week6', {
+        pageTitle: 'Week Six',
+        path: '/week6'
+    });
+}
+
+exports.getWeekSeven = (req, res, next) => {
+    res.render('weeklyActivities/week7', {
+        pageTitle: 'Week Seven',
+        path: '/week7'
+    });
+}
+
+exports.getWeekEight = (req, res, next) => {
+    res.render('weeklyActivities/week8', {
+        pageTitle: 'Week Eight',
+        path: '/week8'
+    });
+}
+
+exports.getWeekNine = (req, res, next) => {
+    res.render('weeklyActivities/week9', {
+        pageTitle: 'Week Nine',
+        path: '/week9'
+    });
+}
+
+exports.getWeekTen = (req, res, next) => {
+    res.render('weeklyActivities/week10', {
+        pageTitle: 'Week Ten',
+        path: '/week10'
+    });
+}
+
+exports.getWeekEleven = (req, res, next) => {
+    res.render('weeklyActivities/week11', {
+        pageTitle: 'Week Eleven',
+        path: '/week11'
+    });
+}
+
 exports.getOnePageApp = (req, res, next) => {
     res.render('blockTwoChallenge', {
         pageTitle: 'Block Two Challenge',

@@ -1,0 +1,126 @@
+<%- include('../includes/head.ejs') %>
+
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <ul>
+            <li>
+                <h2><a href="/ta04">Team Activity</a></h2>
+            </li>
+
+            <!-- task one -->
+            <li class="main-list__item">
+                <h2>Completed reading assignment from Javascript: Novice to Ninja.</h2>
+                <div>
+                    <h3>Notes from reading:</h3>
+                    <ul class="inner-content">
+
+                        <li>
+                            <h4>Forms</h4>
+                            <p>- The legacy DOM had a useful property called document.forms that returns an HTML
+                                collection of all the forms in the document in the order they appear in the markup. Use
+                                index notation to return the first (and only) form object, like so: <span
+                                    style='color: blue;'> const form = document.forms[0];</span></p>
+                            <p>- This is the equivalent of using the following method that we learned in chapter 6:
+                                <span style='color: rgb(90, 4, 124);'> const form =
+                                    document.getElementsByTagname('form')[0];</span>
+                            </p>
+                            <p>- Instead of using a numerical index, we can use the name attribute to identify a form:
+                                <span style='color: rgb(8, 23, 240);'> const form = document.forms.search;</span></p>
+
+                            <p>- A form can be submitted manually by the user employing a button or input element with a
+                                type attribute of submit, or even an input element with a type attribute of image.</p>
+
+                            <p>- The form.reset() method will reset all the form controls back to their initial values
+                                specified in the HTML.</p>
+
+                            <p>*** Reset buttons are generally considered poor for usability, as they are too easy to
+                                click and then wipe out all the data that’s been entered. So think very carefully before
+                                using one in a form.</p>
+
+                            <p>- The focus event occurs when an element is focused on: <span
+                                    style='color: rgb(26, 4, 124);'>input.addEventListener('focus', () =>
+                                    alert('focused'), false); </span> </p>
+
+                            <p>- The blur event occurs when the user moves the focus away from the form element. </p>
+
+                            <p>- The change event occurs when the user moves the focus away from the form element after
+                                changing it. </p>
+                            <p>- Text input element objects have a value property that can be used to retrieve the text
+                                inside the field.</p>
+
+                            <p>- Hidden fields can be created using input fields with type='hidden'. These are not
+                                displayed by the browser, but have a 'value' attribute that can contain information that
+                                is submitted with the form. They are often used to send information such as settings or
+                                information that the user has already provided. Note that the information in these
+                                fields is in no way secret, as it’s visible in the HTML, so shouldn’t be used for
+                                sensitive data. The value of a hidden input field can be changed using JavaScript in the
+                                same was as any other input field.</p>
+
+                            <p>- A file input field can be created using input fields with type='file'. These are used
+                                to upload files, and most browsers will provide a browse button or similar that lets
+                                users select a file from their file system.</p>
+
+                            <p>- Form validation is the process of checking whether a user has entered the information
+                                into a form correctly.</p>
+
+                            <p><a href="../MVC/list.html">- MV* Example</a></p>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <!-- task 2 -->
+            <li class="main-list__item">
+                <h2>Completed Team Activity</h2>
+                <div>
+                    <h3>Notes:</h3>
+                    <ul class="inner-content">
+                        <li>
+                            <h4>Core Requirements</h4>
+                            <p>We were able to complete all of the core requirements.</p>
+                        </li>
+
+                        <li>
+                            <h4>Stretch Goals</h4>
+                            <p>We were able to complete all of the stretch goals.</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <!-- task 4 -->
+            <li class="main-list__item">
+                <h2>Report</h2>
+                <div>
+                    <h3>Notes:</h3>
+                    <ol class="inner-content">
+                        <li>
+                            <h4>What did I do since the last meeting?</h4>
+                            <p>I met with my team and completed the team assignment.</p>
+                            <p>Fixed social media icons.</p>
+                        </li>
+
+                        <li>
+                            <h4>What am I going to do next?</h4>
+                            <p>Continue to add content as needed every week.</p>
+                            <p>Start on next week's reading and ta to be prepare for the meeting.</p>
+                            <p>I want to implement the MVC pattern to my project. </p>
+                        </li>
+
+                        <li>
+                            <h4>What are my blockers?</h4>
+                            <p>My full time job was a big blocker this week, having to travel longer than usual.</p>
+                            <p>My flights being delayed on my way home from work.</p>
+                        </li>
+                    </ol>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <%- include('../includes/end.ejs') %>
