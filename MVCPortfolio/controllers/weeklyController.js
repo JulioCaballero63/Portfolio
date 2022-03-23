@@ -86,6 +86,13 @@ exports.getOnePageApp = (req, res, next) => {
     });
 }
 
+exports.getTodo = (req, res, next) => {
+    res.render('todo', {
+        pageTitle: 'To Do',
+        path: '/todo'
+    });
+}
+
 exports.getAll = (req, res, next) => {
     res.render('index', {
         pageTitle: 'WDD 330 Portfolio',

@@ -1,0 +1,97 @@
+<%- include('../includes/head.ejs') %>
+
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <ul>
+            <li>
+                <h2><a href="/ta05">Team Activity</a></h2>
+            </li>
+
+            <!-- task one -->
+            <li class="main-list__item">
+                <h2>Testing and Debugging.</h2>
+                <div>
+                    <h3>Notes from reading:</h3>
+                    <ul class="inner-content">
+
+                        <li>
+                            <p>- Bugs are unavoidable in code, and it’s best to find them early rather than later.</p>
+                            <p>- JavaScript can be put into strict mode using the string "use strict". This can be used
+                                in
+                                a whole file or just a single function.</p>
+                            <p>- Linting tools can be used to ensure your code follows good practice and conventions.
+                            </p>
+                            <p>- Linting tools can be used to ensure your code follows good practice and conventions.
+                            </p>
+                            <p>- Feature detection can check whether a method is supported before calling it, helping to
+                                avoid an exception being thrown.</p>
+                            <p>- The console and browser’s built-in debugging tool can be used to interactively find and
+                                fix bugs in code.</p>
+                            <p>- Exceptions can be thrown using the throw statement.</p>
+                            <p>- An error object is created when an exception occurs.</p>
+                            <p>- Any code placed inside a try block will pass any error objects to a catch block when an
+                                exception occurs. Any code inside a finally block will run if an exception does or does
+                                not occur.</p>
+                            <p>- Test-driven development is the practice of writing tests that fail, then writing the
+                                code
+                                that passes the test, then refactoring the code every time a new feature is implemented.
+                            </p>
+                            <p>- The Jest framework can be used to test your code.</p>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <!-- task 2 -->
+            <li class="main-list__item">
+                <h2>Completed Team Activity</h2>
+                <div>
+                    <h3>Notes:</h3>
+                    <ul class="inner-content">
+                        <li>
+                            <h4>Core Requirements</h4>
+                            <p>We were able to complete all of the core requirements.</p>
+                        </li>
+
+                        <li>
+                            <h4>Stretch Goals</h4>
+                            <p>We were able to complete all of the stretch goals.</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <!-- task 4 -->
+            <li class="main-list__item">
+                <h2>Report</h2>
+                <div>
+                    <h3>Notes:</h3>
+                    <ol class="inner-content">
+                        <li>
+                            <h4>What did I do since the last meeting?</h4>
+                            <p>I met with my team and completed the team assignment.</p>
+                        </li>
+
+                        <li>
+                            <h4>What am I going to do next?</h4>
+                            <p>Continue to add content as needed every week.</p>
+                            <p>Start on next week's reading and ta to be prepare for the meeting.</p>
+                            <p>I want to implement the MVC pattern to my project. </p>
+                        </li>
+
+                        <li>
+                            <h4>What are my blockers?</h4>
+                            <p>My full time job was a big blocker this week.</p>
+                        </li>
+                    </ol>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <%- include('../includes/end.ejs') %>

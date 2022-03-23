@@ -1,0 +1,93 @@
+main {
+    margin: auto;
+}
+
+.container {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+
+button {
+    border-radius: 10px;
+    background: rgb(215, 216, 219);
+    padding: .5em;
+    margin: 1rem;
+    font-size: 1rem;
+    color: black;
+    box-shadow: none;
+}
+
+.todo {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: .5em;
+}
+
+.complete-btn {
+    background: white;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 0px;
+    flex: 0 1 5%;
+    box-shadow: none;
+}
+
+.todo-content {
+    font-size: 1.5rem;
+    padding: .2rem;
+    margin: .5rem 0rem .5rem .5rem;
+    flex: 1 0 60%;
+}
+
+.todo-delete-btn {
+    background: red;
+    color: rgb(214, 211, 211);
+    font-size: 1rem;
+    padding: .2rem .5rem;
+    margin: .5rem;
+    border-radius: 0px;
+    flex: 0 1 10%;
+    box-shadow: none;
+}
+
+.todo-filters {
+    text-align: left;
+}
+
+#allFilter,
+#activeFilter,
+#completedFilter {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.add-todo-wrapper {
+    display: flex;
+    margin-top: 1em;
+}
+
+#todoInput {
+    flex: 1 0 90%;
+    margin-right: .5em;
+}
+
+#addBtn {
+    margin: 0;
+    flex: 0 1 20%;
+    box-shadow: none;
+}
+
+.completed div {
+    text-decoration: line-through;
+}
+
+.completed {
+    border: 3px solid red;
+}

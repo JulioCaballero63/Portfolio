@@ -1,0 +1,38 @@
+<%- include('includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/todo.css">
+
+<script type="module" src="/js/todo.js"></script>
+
+</head>
+
+<body>
+
+    <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <div class="container">
+            <h1>Todo List</h1>
+
+            <div class="todos-wrapper">
+                <div id="todos">
+
+                </div>
+
+                <div class="todo-filters">
+                    <button id="allFilter">All</button>
+                    <button id="activeFilter">Active</button>
+                    <button id="completedFilter">Completed</button>
+
+
+                </div>
+            </div>
+            <div class="add-todo-wrapper">
+                <input type="text" id="todoInput">
+                <button id="addBtn">Add</button>
+            </div>
+        </div>
+
+        <div id="test"></div>
+    </main>
+    <%- include('includes/end.ejs') %>

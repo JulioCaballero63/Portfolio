@@ -33,6 +33,8 @@ router.get('/week11', weeklyController.getWeekEleven);
 
 router.get('/onePageApp', weeklyController.getOnePageApp);
 
+router.get('/todo', weeklyController.getTodo);
+
 router.get('/', weeklyController.getAll);
 
 module.exports = router;
