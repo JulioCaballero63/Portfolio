@@ -48,7 +48,7 @@ const links = [
     ,
     {
         label: "Block 2 Challenge",
-        url: "onePageApp/index.html"
+        url: "onePageApp"
     }
 ]
 
