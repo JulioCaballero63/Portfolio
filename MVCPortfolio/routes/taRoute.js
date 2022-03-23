@@ -9,4 +9,6 @@ const router = express.Router();
 
 router.get('/ta02', taController.getTA02);
 
+router.get('/ta03', taController.getTA03);
+
 module.exports = router;

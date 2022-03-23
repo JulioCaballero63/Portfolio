@@ -4,3 +4,10 @@ exports.getTA02 = (req, res, next) => {
         path: '/ta02'
     });
 }
+
+exports.getTA03 = (req, res, next) => {
+    res.render('teamActivities/ta03', {
+        pageTitle: 'Team Activity Week 3',
+        path: '/ta03'
+    });
+}

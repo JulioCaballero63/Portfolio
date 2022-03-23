@@ -13,6 +13,8 @@ router.get('/week1', weeklyController.getWeekOne);
 
 router.get('/week2', weeklyController.getWeekTwo);
 
+router.get('/week3', weeklyController.getWeekThree);
+
 router.get('/onePageApp', weeklyController.getOnePageApp);
 
 router.get('/', weeklyController.getAll);
