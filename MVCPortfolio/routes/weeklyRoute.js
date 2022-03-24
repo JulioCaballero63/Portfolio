@@ -35,6 +35,8 @@ router.get('/onePageApp', weeklyController.getOnePageApp);
 
 router.get('/todo', weeklyController.getTodo);
 
+router.get('/sitePlan', weeklyController.getSitePlan);
+
 router.get('/', weeklyController.getAll);
 
 module.exports = router;

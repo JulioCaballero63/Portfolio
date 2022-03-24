@@ -93,6 +93,10 @@ exports.getTodo = (req, res, next) => {
     });
 }
 
+exports.getSitePlan = (req, res, next) => {
+    res.render('siteplan');
+}
+
 exports.getAll = (req, res, next) => {
     res.render('index', {
         pageTitle: 'WDD 330 Portfolio',
