@@ -1,4 +1,4 @@
-import Comments from './comments.js';
+import Comments from './comments7.js';
 
 
 //create an array of hikes

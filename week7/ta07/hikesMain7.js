@@ -1,4 +1,4 @@
-import Hikes from './hikes.js';
+import Hikes from './hikes7.js';
 
 const myHikes = new Hikes('hikes');
 window.addEventListener('load', () => {
