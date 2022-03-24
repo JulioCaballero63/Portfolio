@@ -97,6 +97,13 @@ exports.getSitePlan = (req, res, next) => {
     res.render('siteplan');
 }
 
+exports.getProjects = (req, res, next) => {
+    res.render('projects', {
+        pageTitle: 'Projects',
+        path: '/projects'
+    });
+}
+
 exports.getAll = (req, res, next) => {
     res.render('index', {
         pageTitle: 'WDD 330 Portfolio',

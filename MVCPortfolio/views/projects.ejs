@@ -1,0 +1,36 @@
+<%- include('includes/head.ejs') %>
+
+</head>
+
+<body>
+    <div class="largenav">
+        <header>
+            <div class="logoh1">
+                <picture>
+                    <img src="images/logo.jpg" alt="logo" />
+                </picture>
+                <section class="header">
+                    <h1><%= pageTitle %></h1>
+                </section>
+            </div>
+        </header>
+        <nav>
+            <ul class="nav-items">
+                <li><a class="hamburger button" href="#">🍔 Menu</a></li>
+                <li><a href="/index">Home</a></li>
+                <li class="active"><a href="/projects">Projects</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <ul>
+            <li>
+                <h2><a href="https://cse341julioc.herokuapp.com/">E-commerce Book Store</a></h2>
+                <p>This is a project built with nodejs, MongoDB, and Heroku. This site is hosted by Heroku.</p>
+            </li>
+
+
+
+
+    </main>
+    <%- include('includes/end.ejs') %>

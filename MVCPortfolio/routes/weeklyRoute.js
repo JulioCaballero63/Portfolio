@@ -37,6 +37,8 @@ router.get('/todo', weeklyController.getTodo);
 
 router.get('/sitePlan', weeklyController.getSitePlan);
 
+router.get('/projects', weeklyController.getProjects);
+
 router.get('/', weeklyController.getAll);
 
 module.exports = router;
