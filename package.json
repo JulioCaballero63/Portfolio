@@ -16,5 +16,13 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioCaballero63/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JulioCaballero63/Portfolio/issues"
+  },
+  "homepage": "https://github.com/JulioCaballero63/Portfolio#readme"
 }
