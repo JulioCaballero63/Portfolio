@@ -1,4 +1,5 @@
 const path = require('path');
+const PORTS = process.env.PORT || 3000;
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -21,4 +22,4 @@ app.use(taRoutes);
 
 app.use(errorController.get404);
 
-app.listen(3000);
+app.listen(PORTS);
