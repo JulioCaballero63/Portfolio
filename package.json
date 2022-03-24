@@ -8,16 +8,8 @@
     "start": "nodemon app.js",
     "start-server": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JulioCaballero63/wdd330.git"
-  },
   "author": "julio",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JulioCaballero63/wdd330/issues"
-  },
-  "homepage": "https://github.com/JulioCaballero63/wdd330#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
