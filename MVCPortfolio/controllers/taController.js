@@ -60,3 +60,7 @@ exports.getTA11 = (req, res, next) => {
         path: '/ta11'
     });
 }
+
+exports.getQuakes = (req, res, next) => {
+    res.render('teamActivities/quakeList');
+}

@@ -25,4 +25,6 @@ router.get('/ta10', taController.getTA10);
 
 router.get('/ta11', taController.getTA11);
 
+router.get('/quakes', taController.getQuakes);
+
 module.exports = router;
