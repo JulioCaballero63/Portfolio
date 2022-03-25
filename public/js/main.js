@@ -44,8 +44,7 @@ const links = [
     {
         label: "Week11 Notes",
         url: "/week11"
-    }
-    ,
+    },
     {
         label: "Block 2 Challenge",
         url: "/onePageApp"
