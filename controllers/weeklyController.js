@@ -79,6 +79,20 @@ exports.getWeekEleven = (req, res, next) => {
     });
 }
 
+exports.getWeekTwelve = (req, res, next) => {
+    res.render('weeklyActivities/week12', {
+        pageTitle: 'Week Twelve',
+        path: '/week12'
+    });
+}
+
+exports.getWeekThirteen = (req, res, next) => {
+    res.render('weeklyActivities/week13', {
+        pageTitle: 'Week Thirteen',
+        path: '/week13'
+    });
+}
+
 exports.getOnePageApp = (req, res, next) => {
     res.render('blockTwoChallenge', {
         pageTitle: 'Block Two Challenge',

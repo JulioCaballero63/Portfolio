@@ -46,6 +46,14 @@ const links = [
         url: "/week11"
     },
     {
+        label: "Week12 Notes",
+        url: "/week12"
+    },
+    {
+        label: "Week13 Notes",
+        url: "/week13"
+    },
+    {
         label: "Block 2 Challenge",
         url: "/onePageApp"
     }

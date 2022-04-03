@@ -31,6 +31,10 @@ router.get('/week10', weeklyController.getWeekTen);
 
 router.get('/week11', weeklyController.getWeekEleven);
 
+router.get('/week12', weeklyController.getWeekTwelve);
+
+router.get('/week13', weeklyController.getWeekThirteen);
+
 router.get('/onePageApp', weeklyController.getOnePageApp);
 
 router.get('/todo', weeklyController.getTodo);
